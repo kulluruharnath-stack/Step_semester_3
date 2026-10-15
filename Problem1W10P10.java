@@ -1,0 +1,20 @@
+import java.util.*;
+
+class Problem1W10P10 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.next().toLowerCase();
+        int v = 0, c = 0;
+
+        for (char ch : s.toCharArray()) {
+            if ("aeiou".indexOf(ch) >= 0)
+                v++;
+            else
+                c++;
+        }
+
+        System.out.println("Vowels: " + v);
+        System.out.println("Consonants: " + c);
+        sc.close();
+    }
+}
